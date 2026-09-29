@@ -1,0 +1,22 @@
+name : Simple Github Action
+
+on:
+
+  push :
+
+jobs :
+
+   test-job:
+
+     runs-on : ubuntu-latest
+
+    steps :
+
+       -name : print message
+       run :  echo "Hello from Github Action"
+
+       -name : show date
+        run : Date
+
+      -name : list files
+       run : ls
